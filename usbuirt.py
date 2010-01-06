@@ -1,5 +1,10 @@
 import ctypes
 
+# Copyright 2010 Ben Smith (benjamin.coder.smith@gmail.com)
+# Used to access hardware features on the USB-UIRT device http://www.usbuirt.com
+# relies on the uuirtdrv.so library and USB-UIRT hardware device
+# Public Domain.
+
 DEFAULT_UUIRTDRV_LIBRARY_LOCATION = "./uuirtdrv.so"
 
 PUUCALLBACKPROC = ctypes.CFUNCTYPE(None, ctypes.c_char_p, ctypes.c_void_p)
